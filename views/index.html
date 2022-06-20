@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/reset.css">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_2744268_3w8ymqgl56.css">
+  <script src="../public/js/jquery.min.js"></script>
+  <script src="../public/js/data.js"></script>
+  <script src="../public/js/main.js"></script>
+  <title>网抑云音乐</title>
+</head>
+<body>
+  <audio src="../public/music/jn.mp3">
+    您的浏览器不支持audio。
+  </audio>
+  <div id="box">
+    <header>
+      <img src="../public/img/logo.png" alt="图片缺失">
+      <input type="text" placeholder="🔍音乐搜索" value="" id="search" autocomplete="off">
+      <i class="icon iconfont icon-yonghu" id="denglu"> 登录</i>
+      <i class="icon iconfont icon-pifu"> 皮肤</i>
+    </header>
+    <article>
+      <div class="left">
+        <div class="" id="musicImg"><img src="../public/img/img01.jpg" alt=""></div>
+        <div>
+          <button>
+            <i class="icon iconfont icon-iconfontxihuan"> 喜欢</i>
+          </button>
+          <button>
+            <i class="icon iconfont icon-shoucang"> 收藏</i>
+          </button>
+          <button>
+            <i class="icon iconfont icon-xiazai"> 下载</i>
+          </button>
+          <button>
+            <i class="icon iconfont icon-fenxiang"> 分享</i>
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <h1>歌名</h1>
+          <span>专辑：<a href="#">专辑名</a></span>
+          <span>歌手：<a href="#">歌手名</a></span>
+          <span>来源：<a href="#">来源</a></span>
+          <ul></ul>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="pinglun">
+        <div class="top">
+          <p>听友评论&nbsp;<span>（已有 n 条评论）</span></p>
+          <input type="button" value="🖊 发表评论">
+          <div><span>😊</span><span>@</span></div>
+          <p>精彩评论</p>
+        </div>
+        <div class="bottom">
+          <!-- <div>
+            <div class="left">
+              <img src="" alt="图片">
+            </div>
+            <div class="right">
+              <p><span>评论人：</span><span>评论内容</span></p>
+              <p><span>回复人：</span><span>回复内容</span></p>
+              <p>
+                <span id="postTime">时间</span>
+                <span id="spanbox">
+                  <i class="icon iconfont icon-dianzan"></i>
+                  <button>分享</button>
+                  <button>回复</button>
+                </span>
+              </p>
+            </div>
+            <div style="clear: both;"></div>
+          </div> -->
+        </div>
+      </div>
+    </article>
+    <footer>
+      <i class="icon iconfont icon-shangyishou"></i>
+      <i class="icon iconfont icon-zanting"></i>
+      <i class="icon iconfont icon-xiayishou"></i>
+      <span>00:00</span>
+      <input type="range" min="" max="" step="1" value="0">
+      <span>03:34</span>
+      <i class="icon iconfont icon-xiangling"></i>
+      <input type="range" min="0" max="100" step="1" value="100">
+      <i class="icon iconfont icon-liebiaoshunxu" title="顺序播放"></i>
+      <i class="icon iconfont icon-geciweidianji"></i>
+      <i class="icon iconfont icon-liebiao"></i>
+    </footer>
+
+    <!-- 登录组件 -->
+    <div id="loginbox">
+      <div>
+        <p>用户登录<button type="button">×</button></p>
+        <input type="text" name="user" placeholder="用户名" autocomplete="off"><br>
+        <input type="password" name="psd" placeholder="密码" autocomplete="off"><br>
+        <input type="checkbox">&nbsp;记住密码<br>
+        <input type="submit" value="登录">
+        <input type="button" value="注册">
+      </div>
+    </div>
+
+    <!-- 皮肤盒子 -->
+    <div id="skinbox">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 播放列表与历史记录组件 -->
+    <div id="listsbox">
+      <div class="top">
+        <ul>
+          <li>播放列表</li>
+          <li>历史记录</li>
+        </ul>
+        <button>×</button>
+      </div>
+      <div class="lists" id="musicList">
+        <p>总共 <span>n</span> 首</p>
+      </div>
+      <div class="lists" id="historyList">
+        <p>总共 <span>n</span> 首<button>清空</button></p>
+      </div>
+    </div>
+
+    <!-- 哔哔盒子 -->
+    <div class="bgcbox">
+      <div id="bibibox">
+        <p>当前歌名 <button>x</button></p>
+        <textarea name="" id="" cols="30" rows="3" maxlength="85"></textarea>
+        <p>还剩 <span>85</span> 字</p>
+        <button>评价</button>
+      </div>
+    </div>
+  </div>
+  <!-- 桌面歌词 -->
+  <div id="desktop">
+    <p></p>
+  </div>
+</body>
+</html>
